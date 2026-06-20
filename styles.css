@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #28a745;
+    color: white;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#callToAction {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e9ecef;
+}
+
+#callToAction button {
+    background-color: #007bff;
+}
+
+#callToAction button:hover {
+    background-color: #0056b3;
+}

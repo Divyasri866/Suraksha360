@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Family & Friends Contacts</title>
+  <link rel="stylesheet" href="style1.css" />
+  <a href="filename.html"></a>
+</head>
+<body>
+  <header class="topbar">
+    <a href="profile.html" class="back">&larr;</a>
+    <h2>Family & Friends Contacts</h2>
+    <img src="logo.jpg" alt="profile" class="logoimg">
+
+  </header>
+  <main class="content">
+    <!-- Contact List Section -->
+    <section class="section">
+      <h3>Emergency Contacts</h3>
+      <ul class="contact-list" id="contactList">
+        <li>
+          <span class="contact-name">Mom</span>
+          <span class="contact-number">+91 9876543210</span>
+          <a href="tel:+919876543210" class="call-button">📞</a>
+          <button class="delete-button">Delete</button>
+        </li>
+        <li>
+          <span class="contact-name">Bestie</span>
+          <span class="contact-number">+91 9988776655</span>
+          <a href="tel:+919988776655" class="call-button">📞</a>
+          <button class="delete-button">Delete</button>
+        </li>
+        <li>
+            <span class="contact-name">Police station</span>
+            <span class="contact-number">+91 9988776655</span>
+            <a href="tel:+919988776655" class="call-button">📞</a>
+            <button class="delete-button">Delete</button>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Add Contact Section -->
+    <section class="section">
+      <h3>Add New Contact</h3>
+      <form class="contact-form" id="contactForm">
+        <input type="text" id="contactName" placeholder="Contact Name" required />
+        <input type="tel" id="contactPhone" placeholder="Phone Number" required />
+        <button type="submit">Add Contact</button>
+      </form>
+    </section>
+  </main>
+  <script>
+    // Handle form submission to add a new contact
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Get input values
+      const name = document.getElementById("contactName").value;
+      const phone = document.getElementById("contactPhone").value;
+
+      // Create a new list item for the contact
+      const contactItem = document.createElement("li");
+
+      // Create and append contact name
+      const contactName = document.createElement("span");
+      contactName.classList.add("contact-name");
+      contactName.textContent = name;
+      contactItem.appendChild(contactName);
+
+      // Create and append contact phone number
+      const contactPhone = document.createElement("span");
+      contactPhone.classList.add("contact-number");
+      contactPhone.textContent = phone;
+      contactItem.appendChild(contactPhone);
+
+      // Create and append call button
+      const callButton = document.createElement("a");
+      callButton.classList.add("call-button");
+      callButton.href = `tel:${phone}`;
+      callButton.textContent = "📞";
+      contactItem.appendChild(callButton);
+
+      // Create and append delete button
+      const deleteButton = document.createElement("button");
+      deleteButton.classList.add("delete-button");
+      deleteButton.textContent = "Delete";
+      deleteButton.addEventListener("click", function() {
+        contactItem.remove(); // Remove the contact from the list
+      });
+      contactItem.appendChild(deleteButton);
+
+      // Append the new contact item to the list
+      document.getElementById("contactList").appendChild(contactItem);
+
+      // Clear the form inputs
+      document.getElementById("contactName").value = "";
+      document.getElementById("contactPhone").value = "";
+    });
+
+    // Event listener for deleting existing contacts
+    const deleteButtons = document.querySelectorAll(".delete-button");
+    deleteButtons.forEach(button => {
+      button.addEventListener("click", function() {
+        const contactItem = this.parentElement;
+        contactItem.remove(); // Remove the contact item when delete is clicked
+      });
+    });
+  </script>
+</body>
+</html>

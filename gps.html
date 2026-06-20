@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Real-Time GPS Tracking</title>
+</head>
+<body>
+  <h1>Real-Time GPS Tracking</h1>
+  <p id="status">Status: Not tracking</p>
+  <p id="latitude">Latitude: N/A</p>
+  <p id="longitude">Longitude: N/A</p>
+  <p id="speed">Speed: N/A</p>
+  <p id="heading">Heading: N/A</p>
+  <p id="altitude">Altitude: N/A</p>
+
+  <script>
+    if ("geolocation" in navigator) {
+      document.getElementById('status').textContent = 'Status: Tracking...';
+
+      navigator.geolocation.watchPosition(function(position) {
+        document.getElementById('latitude').textContent = 'Latitude: ' + position.coords.latitude;
+        document.getElementById('longitude').textContent = 'Longitude: ' + position.coords.longitude;
+        document.getElementById('speed').textContent = 'Speed: ' + position.coords.speed;
+        document.getElementById('heading').textContent = 'Heading: ' + position.coords.heading;
+        document.getElementById('altitude').textContent = 'Altitude: ' + position.coords.altitude;
+      }, function(error) {
+        document.getElementById('status').textContent = 'Status: Error - ' + error.message;
+      }, {
+        enableHighAccuracy: true,
+        maximumAge: 0
+      });
+    } else {
+      document.getElementById('status').textContent = 'Status: Geolocation not supported';
+    }
+  </script>
+</body>
+</html>

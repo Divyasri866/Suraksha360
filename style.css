@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 80px; /* space for switch button */
+    background-color: linear-gradient(to right, #E6E6FA, #D3D3FF);
+}
+
+nav {
+    background-color: rgb(37, 9, 37);
+    color: white;
+    height: 65px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.main-heading {
+    text-align: center;
+    margin: 30px 0 10px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 2.5rem;
+    color: rgb(37, 9, 37);
+}
+
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    position: relative;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgb(242, 234, 250);
+}
+
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.info {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#reset, #switch {
+    padding: 6px 20px;
+    background: #f3e7f9;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#reset:hover, #switch:hover {
+    background-color: #e0cdee;
+}
+
+#switch {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10;
+}
+
+.imgbox {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.imgbox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.line {
+    background-color: #911d91;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+
+    .main-heading {
+        font-size: 1.8rem;
+    }
+}

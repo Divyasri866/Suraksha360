@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right,#fff7ad,#ffa9f9); /* Light Pink Background */
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color:#ffa9f9; ;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo, .college-logo {
+    width: 5 0px;
+    height: 50px;
+    border-radius: 25%;
+}
+
+.nav-brand span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: blue;
+}
+img{
+ 	width:50px;
+	height:50px;
+	border-radius:75%;
+}
+/* Hero Section */
+.hero img{
+	width:200px;
+	height:200px;
+	border-radius:75%;
+
+}
+.hero {
+    margin-top: 65px;
+    padding: 20px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+}
+
+.hero p {
+    font-size: 18px;
+    color: black;
+}
+
+/* Button */
+.location-btn {
+    background:#ffd0fc;
+    color: black;
+    font-size: 16px;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.location-btn:hover {
+    background:#fddafa;
+}
+.about img{
+	margin top:10px;
+	max-width:100px;
+	float:right;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.member-card {
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  padding: 20px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+.member-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.member-card h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.member-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+   }
+
+p, li {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+ul, ol {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color: #121212;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #f2f2f2;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #ffcc00;
+}
+
+.social-icons a img {
+  width: 24px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #aaa;
+}

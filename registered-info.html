@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registered Info</title>
+  <link rel="stylesheet" href="style1.css" />
+  <style>
+    input:valid, textarea:valid {
+      border: 2px solid green;
+    }
+
+    input:invalid, textarea:invalid {
+      border: 2px solid red;
+    }
+
+    .form-container {
+      padding: 20px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #2b6777;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1a4753;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a href="profile.html" class="back">&larr;</a>
+    <h2>Registered Information</h2>
+    <img src="logo.jpg" alt="profile" class="logoimg">
+
+  </header>
+
+  <main class="content">
+    <div class="form-container">
+      <form id="registrationForm" action="#" method="post">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <label for="emergency">Emergency Contact</label>
+        <input type="tel" id="emergency" name="emergency" required pattern="[0-9]{10}">
+
+        <label for="alternative_contact">Alternative Contact Number</label>
+        <input type="tel" id="alternative_contact" name="alternative_contact" required pattern="[0-9]{10}">
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </main>
+
+  <script>
+    const form = document.getElementById("registrationForm");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const phone = document.getElementById("phone").value;
+      const emergency = document.getElementById("emergency").value;
+      const altContact = document.getElementById("alternative_contact").value;
+      const phonePattern = /^[0-9]{10}$/;
+
+      if (!phonePattern.test(phone) || !phonePattern.test(emergency) || !phonePattern.test(altContact)) {
+        alert("Please enter valid 10-digit phone numbers.");
+        return;
+      }
+
+      alert("🎉 Registration Successful!");
+      form.reset();
+    });
+  </script>
+</body>
+</html>

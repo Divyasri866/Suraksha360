@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registered Address</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a href="profile.html" class="back">&larr;</a>
+    <h2>Registered Address</h2>
+    <img src="logo.jpg" alt="profile" class="logoimg">
+
+  </header>
+  
+  <main class="content">
+    <!-- Display Section -->
+    <section class="section">
+      <h3>Current Address</h3>
+      <p id="addressDisplay" class="address-display">
+        H.No: 12-345, Street Name,<br>
+        Vignan Nagar, Guntur,<br>
+        Andhra Pradesh - 522001, India
+      </p>
+    </section>
+
+    <!-- Form Section -->
+    <section class="section">
+      <h3>Update Address</h3>
+      <form class="address-form" id="addressForm">
+        <input type="text" id="house" placeholder="House Number" required />
+        <input type="text" id="street" placeholder="Street" required />
+        <input type="text" id="city" placeholder="City" required />
+        <input type="text" id="state" placeholder="State" required />
+        <input type="text" id="pincode" placeholder="Pincode" required />
+        <input type="text" id="country" placeholder="Country" required />
+        <button type="submit">Update Address</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- JavaScript -->
+  <script>
+    const form = document.getElementById('addressForm');
+    const addressDisplay = document.getElementById('addressDisplay');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const house = document.getElementById('house').value;
+      const street = document.getElementById('street').value;
+      const city = document.getElementById('city').value;
+      const state = document.getElementById('state').value;
+      const pincode = document.getElementById('pincode').value;
+      const country = document.getElementById('country').value;
+
+      const newAddress = `
+        H.No: ${house}, ${street},<br>
+        ${city},<br>
+        ${state} - ${pincode}, ${country}
+      `;
+
+      addressDisplay.innerHTML = newAddress;
+      form.reset();
+    });
+    
+  </script>
+</body>
+</html>
