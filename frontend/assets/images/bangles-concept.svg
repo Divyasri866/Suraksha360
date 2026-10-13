@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" width="100%" height="auto">
+  <defs>
+    <linearGradient id="bangleGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E91E63" />
+      <stop offset="100%" stop-color="#880E4F" />
+    </linearGradient>
+    <linearGradient id="bangleGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9C27B0" />
+      <stop offset="100%" stop-color="#4A148C" />
+    </linearGradient>
+    <linearGradient id="signalGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5252" />
+      <stop offset="100%" stop-color="#FFD740" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas Card -->
+  <rect x="10" y="10" width="480" height="300" rx="16" fill="#FFF8F0" stroke="#FFE0B2" stroke-width="2" filter="url(#shadow)" />
+
+  <!-- Left Bangle (Primary Unit with GPS + Cellular) -->
+  <g transform="translate(140, 150)">
+    <circle cx="0" cy="0" r="75" fill="none" stroke="url(#bangleGrad1)" stroke-width="22" filter="url(#shadow)" />
+    <circle cx="0" cy="0" r="75" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="4,6" opacity="0.6" />
+    <!-- Embedded Proximity Sensor Node -->
+    <circle cx="65" cy="0" r="12" fill="#FFEB3B" stroke="#F57F17" stroke-width="2" />
+    <circle cx="65" cy="0" r="5" fill="#E65100" />
+    <!-- Micro Camera & GPS Node -->
+    <circle cx="-65" cy="0" r="10" fill="#212121" stroke="#00E676" stroke-width="2.5" />
+    <circle cx="-65" cy="0" r="4" fill="#00E676" />
+    <text x="0" y="5" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#880E4F">BANGLE 1</text>
+    <text x="0" y="22" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" fill="#AD1457">GPS &amp; Transmitter</text>
+  </g>
+
+  <!-- Right Bangle (Secondary Proximity Unit) -->
+  <g transform="translate(360, 150)">
+    <circle cx="0" cy="0" r="75" fill="none" stroke="url(#bangleGrad2)" stroke-width="22" filter="url(#shadow)" />
+    <circle cx="0" cy="0" r="75" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="4,6" opacity="0.6" />
+    <!-- Embedded Sensor Mate -->
+    <circle cx="-65" cy="0" r="12" fill="#FFEB3B" stroke="#F57F17" stroke-width="2" />
+    <circle cx="-65" cy="0" r="5" fill="#E65100" />
+    <text x="0" y="5" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#4A148C">BANGLE 2</text>
+    <text x="0" y="22" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" fill="#6A1B9A">Magnetic Mate</text>
+  </g>
+
+  <!-- Proximity Detection Gap / Alert Beam -->
+  <g transform="translate(250, 150)">
+    <!-- Signal Waves indicating separation -->
+    <line x1="-30" y1="0" x2="30" y2="0" stroke="url(#signalGrad)" stroke-width="3" stroke-dasharray="6,4" />
+    <path d="M -15,-20 Q 0,-30 15,-20" fill="none" stroke="#FF5252" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M -22,-32 Q 0,-45 22,-32" fill="none" stroke="#FF5252" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M -15,20 Q 0,30 15,20" fill="none" stroke="#FF5252" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M -22,32 Q 0,45 22,32" fill="none" stroke="#FF5252" stroke-width="2.5" stroke-linecap="round" />
+    
+    <!-- Central Alert Badge -->
+    <rect x="-48" y="-12" width="96" height="24" rx="12" fill="#D32F2F" />
+    <text x="0" y="4" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF">DISTANCE TRIGGER</text>
+  </g>
+
+  <!-- Header Banner -->
+  <text x="250" y="42" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="bold" fill="#3E2723">Wearable Safety Device — Dual Bangle Separation IoT Architecture</text>
+  <text x="250" y="62" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" fill="#795548">Disguised rubber bangles automatically trigger emergency SOS when forcibly separated</text>
+
+  <!-- Bottom Legend -->
+  <g transform="translate(50, 275)">
+    <circle cx="10" cy="6" r="6" fill="#00E676" />
+    <text x="24" y="10" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" fill="#424242">Micro Camera &amp; Live GPS</text>
+
+    <circle cx="190" cy="6" r="6" fill="#FFEB3B" stroke="#F57F17" stroke-width="1.5" />
+    <text x="204" y="10" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" fill="#424242">Proximity Distance Sensor</text>
+
+    <circle cx="370" cy="6" r="6" fill="#D32F2F" />
+    <text x="384" y="10" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" fill="#424242">Instant Police / SMS Dispatch</text>
+  </g>
+</svg>

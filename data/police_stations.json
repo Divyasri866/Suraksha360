@@ -1,0 +1,114 @@
+[
+  {
+    "name": "1st Town Police Station",
+    "address": "Town Kotha Rd, Old Post Office, Visakhapatnam - 530001",
+    "phone": "08912563632",
+    "displayPhone": "0891-2563632",
+    "mapsUrl": "https://www.google.com/maps?q=Town+Kotha+Rd,+Visakhapatnam",
+    "city": "Visakhapatnam"
+  },
+  {
+    "name": "P.M. Palem Police Station",
+    "address": "Srinivasa Nagar, Madhurawada, Visakhapatnam - 530048",
+    "phone": "9440796060",
+    "displayPhone": "94407-96060",
+    "mapsUrl": "https://www.google.com/maps?q=Srinivasa+Nagar,+Madhurawada,+Visakhapatnam",
+    "city": "Visakhapatnam"
+  },
+  {
+    "name": "Steel Plant Police Station",
+    "address": "Gajuwaka Bypass Rd, Kanithi Rd, Visakhapatnam Steel Plant, Visakhapatnam - 530031",
+    "phone": "08912587233",
+    "displayPhone": "0891-2587233",
+    "mapsUrl": "https://www.google.com/maps?q=Kanithi+Rd,+Steel+Plant,+Visakhapatnam",
+    "city": "Visakhapatnam"
+  },
+  {
+    "name": "Women Police Station",
+    "address": "75 Feet Rd, Purna Market, Allipuram, Suryabagh, Visakhapatnam - 530020",
+    "phone": "7569632333",
+    "displayPhone": "75696-32333",
+    "mapsUrl": "https://www.google.com/maps?q=Purna+Market,+Visakhapatnam",
+    "city": "Visakhapatnam"
+  },
+  {
+    "name": "Disha Mahila Police Station",
+    "address": "62, NH16, Near NH 5 Road, Varahagiri Nagar, Yendada, Visakhapatnam - 530045",
+    "phone": "1091",
+    "displayPhone": "1091",
+    "mapsUrl": "https://www.google.com/maps?q=Yendada,+Visakhapatnam",
+    "city": "Visakhapatnam"
+  },
+  {
+    "name": "Gajuwaka Police Station",
+    "address": "Old Gajuwaka Junction, Visakhapatnam - 530026",
+    "phone": "08912747100",
+    "displayPhone": "0891-2747100",
+    "mapsUrl": "https://www.google.com/maps?q=Gajuwaka,+Visakhapatnam",
+    "city": "Visakhapatnam"
+  },
+  {
+    "name": "Malkapuram Police Station",
+    "address": "Malkapuram, Visakhapatnam - 530011",
+    "phone": "08912580140",
+    "displayPhone": "0891-2580140",
+    "mapsUrl": "https://www.google.com/maps?q=Malkapuram,+Visakhapatnam",
+    "city": "Visakhapatnam"
+  },
+  {
+    "name": "Dwaraka Police Station",
+    "address": "Dwaraka Nagar, Visakhapatnam - 530016",
+    "phone": "08912565240",
+    "displayPhone": "0891-2565240",
+    "mapsUrl": "https://www.google.com/maps?q=Dwaraka+Nagar,+Visakhapatnam",
+    "city": "Visakhapatnam"
+  },
+  {
+    "name": "MVP Colony Police Station",
+    "address": "Sector 5, MVP Colony, Visakhapatnam - 530017",
+    "phone": "08912892000",
+    "displayPhone": "0891-2892000",
+    "mapsUrl": "https://www.google.com/maps?q=MVP+Colony+Police+Station,+Visakhapatnam",
+    "city": "Visakhapatnam"
+  },
+  {
+    "name": "Arilova Police Station",
+    "address": "Arilova Main Rd, Arilova, Visakhapatnam - 530040",
+    "phone": "08912892111",
+    "displayPhone": "0891-2892111",
+    "mapsUrl": "https://www.google.com/maps?q=Arilova+Police+Station,+Visakhapatnam",
+    "city": "Visakhapatnam"
+  },
+  {
+    "name": "Yendada Police Station",
+    "address": "NH16, Yendada, Visakhapatnam - 530045",
+    "phone": "08912892233",
+    "displayPhone": "0891-2892233",
+    "mapsUrl": "https://www.google.com/maps?q=Yendada+Police+Station,+Visakhapatnam",
+    "city": "Visakhapatnam"
+  },
+  {
+    "name": "Bheemili Police Station",
+    "address": "Beach Road, Bheemunipatnam, Visakhapatnam - 531163",
+    "phone": "08933232445",
+    "displayPhone": "08933-232445",
+    "mapsUrl": "https://www.google.com/maps?q=Bheemili+Police+Station,+Visakhapatnam",
+    "city": "Visakhapatnam"
+  },
+  {
+    "name": "Anakapalle Police Station",
+    "address": "Main Road, Anakapalle, Visakhapatnam - 531001",
+    "phone": "08924222345",
+    "displayPhone": "08924-222345",
+    "mapsUrl": "https://www.google.com/maps?q=Anakapalle+Police+Station,+Visakhapatnam",
+    "city": "Visakhapatnam"
+  },
+  {
+    "name": "Pedagantyada Police Station",
+    "address": "Near Port Area, Pedagantyada, Visakhapatnam - 530044",
+    "phone": "08912580110",
+    "displayPhone": "0891-2580110",
+    "mapsUrl": "https://www.google.com/maps?q=Pedagantyada+Police+Station,+Visakhapatnam",
+    "city": "Visakhapatnam"
+  }
+]

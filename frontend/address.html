@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safe-Haven Address — Suraksha360</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+</head>
+<body>
+  <header class="topbar">
+    <a href="profile.html" class="back" title="Back to Settings">&larr;</a>
+    <h2>Registered Safe-Haven Address</h2>
+    <img src="assets/images/logo.svg" alt="Suraksha360 Logo" class="logoimg">
+  </header>
+
+  <main class="content">
+    <!-- Current Display Section -->
+    <section class="section">
+      <h3>
+        <img src="assets/icons/map-pin.svg" alt="" width="20" height="20">
+        Current Safe-Haven Address
+      </h3>
+      <p id="addressDisplay" class="address-display">
+        H.No: 12-345, Street Name,<br>
+        Vignan Nagar, Duvvada, Visakhapatnam,<br>
+        Andhra Pradesh - 530049, India
+      </p>
+    </section>
+
+    <!-- Update Address Form Section -->
+    <section class="section">
+      <h3>Update Safe-Haven Address</h3>
+      <form class="address-form" id="addressForm">
+        <label for="house">House / Flat / Door Number</label>
+        <input type="text" id="house" placeholder="e.g. 12-345" required>
+
+        <label for="street">Street / Locality</label>
+        <input type="text" id="street" placeholder="e.g. Main Road, Sector 4" required>
+
+        <label for="city">City / Town</label>
+        <input type="text" id="city" placeholder="e.g. Visakhapatnam" required>
+
+        <label for="state">State</label>
+        <input type="text" id="state" placeholder="e.g. Andhra Pradesh" required>
+
+        <label for="pincode">Pincode</label>
+        <input type="text" id="pincode" placeholder="e.g. 530049" required>
+
+        <label for="country">Country</label>
+        <input type="text" id="country" placeholder="e.g. India" required>
+
+        <button type="submit">Update Emergency Address</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="queries">
+    <p>Suraksha360 Location Support</p>
+    <a href="tel:919494617277">+91 9494617277</a>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

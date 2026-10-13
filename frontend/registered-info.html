@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registered User Profile — Suraksha360</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+</head>
+<body>
+  <header class="topbar">
+    <a href="profile.html" class="back" title="Back to Settings">&larr;</a>
+    <h2>Registered Information</h2>
+    <img src="assets/images/logo.svg" alt="Suraksha360 Logo" class="logoimg">
+  </header>
+
+  <main class="content">
+    <div class="form-container">
+      <form id="registrationForm" action="#" method="post">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full legal name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+        <label for="phone">Personal Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" required pattern="[0-9]{10}">
+
+        <label for="address">Primary Residential Address</label>
+        <textarea id="address" name="address" rows="3" placeholder="Door No, Street, Landmark, City, Pincode" required></textarea>
+
+        <label for="emergency">Primary Emergency Contact</label>
+        <input type="tel" id="emergency" name="emergency" placeholder="10-digit emergency number" required pattern="[0-9]{10}">
+
+        <label for="alternative_contact">Alternative Contact Number</label>
+        <input type="tel" id="alternative_contact" name="alternative_contact" placeholder="10-digit alternative number" required pattern="[0-9]{10}">
+
+        <button type="submit">Save Profile &amp; Verify</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="queries">
+    <p>For technical support or emergency queries</p>
+    <a href="tel:919494617277">+91 9494617277</a>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

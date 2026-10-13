@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bgMouli" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E65100" />
+      <stop offset="100%" stop-color="#FFA726" />
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="58" fill="url(#bgMouli)" />
+  <circle cx="60" cy="46" r="22" fill="#FFFFFF" opacity="0.95" />
+  <path d="M26 98 C28 76, 50 72, 60 72 C70 72, 92 76, 94 98 Z" fill="#FFFFFF" opacity="0.95" />
+  <circle cx="60" cy="60" r="57" fill="none" stroke="#FFFFFF" stroke-width="2.5" opacity="0.6" />
+  <text x="60" y="52" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="bold" fill="#E65100">MP</text>
+</svg>

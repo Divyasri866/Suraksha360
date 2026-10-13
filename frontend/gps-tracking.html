@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time GPS Tracking — Suraksha360</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+</head>
+<body>
+  <header class="topbar">
+    <a href="profile.html" class="back" title="Back to Settings">&larr;</a>
+    <h2>Real-Time GPS Tracking</h2>
+    <img src="assets/images/logo.svg" alt="Suraksha360 Logo" class="logoimg">
+  </header>
+
+  <main class="content">
+    <div class="gps-card">
+      <div id="status" class="gps-status idle">Status: Initializing satellite fix...</div>
+      
+      <p style="font-size: 0.9rem; color: #555; margin-bottom: 16px;">
+        High-accuracy continuous GPS telemetry streamed from your device. In emergency mode, these coordinates are dispatched to the central portal and designated emergency contacts.
+      </p>
+
+      <div class="gps-grid">
+        <div class="gps-metric">
+          <div class="label">Latitude</div>
+          <div class="val" id="latitude">N/A</div>
+        </div>
+
+        <div class="gps-metric">
+          <div class="label">Longitude</div>
+          <div class="val" id="longitude">N/A</div>
+        </div>
+
+        <div class="gps-metric">
+          <div class="label">Speed</div>
+          <div class="val" id="speed">N/A</div>
+        </div>
+
+        <div class="gps-metric">
+          <div class="label">Heading</div>
+          <div class="val" id="heading">N/A</div>
+        </div>
+
+        <div class="gps-metric" style="grid-column: span 2;">
+          <div class="label">Altitude</div>
+          <div class="val" id="altitude">N/A</div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; text-align: center;">
+        <a id="mapLink" href="#" target="_blank" rel="noopener" class="btn" style="display: none; background: #00897B; width: 100%;">
+          📍 View Location in Google Maps
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="queries">
+    <p>Suraksha360 Satellite Geolocation Protocol</p>
+    <a href="tel:919494617277">+91 9494617277</a>
+  </footer>
+
+  <script src="js/gps.js"></script>
+</body>
+</html>

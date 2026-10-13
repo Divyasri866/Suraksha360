@@ -1,0 +1,22 @@
+{
+  "name": "suraksha360",
+  "version": "1.0.0",
+  "description": "Wearable women's safety IoT system & emergency response web portal disguised as rubber bangles",
+  "main": "frontend/index.html",
+  "scripts": {
+    "start": "npx serve frontend",
+    "dev": "npx serve frontend",
+    "test": "python tests/test_pages.py"
+  },
+  "keywords": [
+    "women-safety",
+    "iot",
+    "emergency-response",
+    "wearable-tech",
+    "gps-tracking",
+    "stealth-mode",
+    "police-directory"
+  ],
+  "author": "A. Divya Sri, G.G.D. Gayatri, A. Mouli Priya, A. JnanaSri",
+  "license": "MIT"
+}

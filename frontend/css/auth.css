@@ -1,0 +1,147 @@
+/* ==========================================================================
+   Suraksha360 - Authentication Stylesheet (Sign In & Sign Up)
+   Replaces missing cs.css
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #FFF9C4 0%, #FCE4EC 50%, #F8BBD0 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: #FFFFFF;
+    width: 100%;
+    max-width: 420px;
+    padding: 36px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(136, 14, 79, 0.12);
+    border: 1px solid #FCE4EC;
+    text-align: center;
+}
+
+.auth-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.auth-brand img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.auth-brand h1 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #880E4F, #C2185B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container h2 {
+    font-size: 1.5rem;
+    color: #4A148C;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.container .subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-align: left;
+}
+
+label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #4A148C;
+    margin-bottom: 4px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #E0E0E0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.2s;
+}
+
+input:focus {
+    border-color: #D81B60;
+    box-shadow: 0 0 0 3px rgba(216, 27, 96, 0.1);
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+    padding: 13px;
+    background: linear-gradient(135deg, #D81B60, #8E24AA);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(216, 27, 96, 0.25);
+    transition: all 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #C2185B, #7B1FA2);
+    box-shadow: 0 6px 16px rgba(216, 27, 96, 0.35);
+}
+
+.toggle {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+}
+
+.toggle a {
+    color: #D81B60;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.toggle a:hover {
+    text-decoration: underline;
+}
+
+.back-home {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 0.85rem;
+    color: #888;
+    text-decoration: none;
+}
+
+.back-home:hover {
+    color: #4A148C;
+}

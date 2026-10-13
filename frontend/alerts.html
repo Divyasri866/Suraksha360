@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alert Logs &amp; Notifications — Suraksha360</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+</head>
+<body>
+  <header class="topbar">
+    <a href="profile.html" class="back" title="Back to Settings">&larr;</a>
+    <h2>Alert Logs &amp; Settings</h2>
+    <img src="assets/images/logo.svg" alt="Suraksha360 Logo" class="logoimg">
+  </header>
+
+  <main class="content">
+    <!-- Recent Alerts History -->
+    <section class="section">
+      <h3>
+        <img src="assets/icons/bell.svg" alt="" width="20" height="20">
+        Recent Incident Logs
+      </h3>
+      <ul class="alert-list">
+        <li><strong>[12-Apr-2025 10:32 AM]</strong> Emergency separation alert triggered. Dispatched coordinates.</li>
+        <li><strong>[10-Apr-2025 08:20 PM]</strong> Contacted nearest police station (Women PS, Suryabagh).</li>
+        <li><strong>[08-Apr-2025 03:45 PM]</strong> GPS signal lost in low-coverage area. Auto-reconnected.</li>
+      </ul>
+    </section>
+
+    <!-- Alert Settings Preferences -->
+    <section class="section">
+      <h3>
+        <img src="assets/icons/shield.svg" alt="" width="20" height="20">
+        Notification Preferences
+      </h3>
+      <div class="settings">
+        <label>
+          <input type="checkbox" id="soundNotification" checked>
+          Enable Audible Siren / Tone Alert
+        </label>
+        <label>
+          <input type="checkbox" id="smsNotification" checked>
+          Send Instant SMS to Designated Emergency Contacts
+        </label>
+        <label>
+          <input type="checkbox" id="autoShareLocation" checked>
+          Auto-Broadcast Live GPS Coordinates to Emergency Portal
+        </label>
+      </div>
+    </section>
+  </main>
+
+  <footer class="queries">
+    <p>Suraksha360 Monitoring Center</p>
+    <a href="tel:919494617277">+91 9494617277</a>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
